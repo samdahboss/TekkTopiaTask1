@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --orange: hsl(26, 100%, 55%);
+}
+body{
+    font-family: "Kumbh Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+/*Navbar Styles*/
+.nav-item{
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s ease;
+}
+.nav-item:hover, .nav-item:active{
+    border-bottom: 3px solid var(--orange);
+}
