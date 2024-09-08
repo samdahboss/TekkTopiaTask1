@@ -46,7 +46,7 @@ export default function Cart() {
 
   return (
     // Cart container with absolute positioning to appear below the Navbar
-    <div className="absolute top-full w-full lg:w-80 right-0 bg-white shadow-lg rounded-lg p-4">
+    <div className="absolute top-full w-full lg:w-80 right-0 z-20 bg-white shadow-2xl rounded-lg p-4">
       {/* Cart title */}
       <h2 className="py-2 border-b font-bold">Cart</h2>
 

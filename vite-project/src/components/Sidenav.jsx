@@ -9,7 +9,7 @@ export default function Sidenav({ toggleSideNav }) {
   return (
     // Main container for the side navigation
     // Tailwind CSS: fixed positioning, full width & height, placed at the top-left corner, semi-transparent black background
-    <div className="fixed w-full h-full top-0 left-0 bg-black bg-opacity-70 lg:hidden">
+    <div className="fixed w-full h-full top-0 left-0 bg-black bg-opacity-70 z-20 lg:hidden">
       
       {/* Inner container for the side navigation menu */}
       {/* Tailwind CSS: fixed, white background, shadow effect, full height, width set to 64 (16rem) */}
