@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     // Main navbar container
     // Tailwind CSS: Flexbox layout, centered horizontally, relative positioning, and bottom border
-    <nav className="flex mx-auto relative border-b border-gray-300">
+    <nav className="flex mx-auto relative border-b lg:px-0 px-4 border-gray-300">
       {/* Menuicon component, used for mobile navigation */}
       {/* Passes toggleSideNav as a prop to the Menuicon to trigger the side nav */}
       <Menuicon toggleSideNav={toggleSideNav} />

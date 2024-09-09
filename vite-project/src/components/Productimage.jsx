@@ -62,7 +62,7 @@ export default function Productimage() {
         <img
           src={imageViews[imageIndex - 1].image}
           alt="product"
-          className="w-screen  rounded-md"
+          className="w-screen"
         />
         <button className="next-button absolute top-1/2 bg-white rounded-full p-2 right-4" onClick={handleNextClick}>
             <img 

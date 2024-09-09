@@ -6,6 +6,7 @@
 
 :root{
     --orange: hsl(26, 100%, 55%);
+    --pale-orange: hsl(27, 100%, 71%);
 }
 body{
     font-family: "Kumbh Sans", sans-serif;

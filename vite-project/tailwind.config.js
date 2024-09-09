@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         orange: 'var(--orange)', // Add your custom color here
+        paleorange: 'var(--pale-orange)',
       },
       maxHeight:{
         'cart': '10rem',

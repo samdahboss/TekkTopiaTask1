@@ -1,10 +1,19 @@
 import Navbar from "./components/Navbar";
-import Productdisplay from "./components/Productdisplay";
+import Productimage from "./components/Productimage";
+import Productinfo from "./components/Productinfo";
+import { CartProvider } from "./components/CartContext";
+
+
 export default function App() {
   return (
-    <div className="lg:px-8 px-4">
-      <Navbar/>
-      <Productdisplay/>
-    </div>
+    <CartProvider>
+      <div className="lg:px-8 lg:px-4">
+        <Navbar/>
+        <div className="product-display flex flex-col lg:flex-row">
+          <Productimage/>
+          <Productinfo/>
+        </div>
+      </div>
+    </CartProvider>
   );
 }

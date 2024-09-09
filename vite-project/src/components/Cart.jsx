@@ -1,48 +1,15 @@
 // Import the delete icon and cart item images
 import deleteIcon from "../assets/icons/icon-delete.svg";
-import cartImage1 from "../assets/image-product-1-thumbnail.jpg";
-import cartImage2 from "../assets/image-product-2-thumbnail.jpg";
-import cartImage3 from "../assets/image-product-3-thumbnail.jpg";
-import cartImage4 from "../assets/image-product-4-thumbnail.jpg";
+import { useContext } from 'react';
+import { CartContext } from './CartContext';
 
 // Cart component displays the list of items in the user's cart
 export default function Cart() {
   // Sample cart items array (usually this would come from a state or API)
-  const cartItems = [
-    {
-      id: 1,
-      name: "Fall Limited Edition Sneakers",
-      price: 100,
-      quantity: 3,
-      image: cartImage1,
-    },
-    {
-      id: 1,
-      name: "Fall Limited Edition Sneakers",
-      price: 100,
-      quantity: 3,
-      image: cartImage2,
-    },
-    {
-      id: 1,
-      name: "Fall Limited Edition Sneakers",
-      price: 100,
-      quantity: 2,
-      image: cartImage3,
-    },
-    {
-      id: 1,
-      name: "Fall Limited Edition Sneakers",
-      price: 100,
-      quantity: 2,
-      image: cartImage4,
-    },
-  ];
+  // Note: This array should be replaced with the actual cart items data
 
-  // Handle delete function (currently just logs to the console)
-  const handleDelete = () => {
-    console.log("delete");
-  };
+  // Get the removeItem function and cartItems from the CartContext
+  const { removeItem, cartItems } = useContext(CartContext);
 
   return (
     // Cart container with absolute positioning to appear below the Navbar
@@ -77,7 +44,8 @@ export default function Cart() {
 
             {/* Delete button */}
             <button>
-              <img src={deleteIcon} onClick={handleDelete} alt="Delete" />
+              {/* Delete icon button, calls removeItem function when clicked */}
+              <img src={deleteIcon} onClick={() => removeItem(index)} alt="Delete" />
             </button>
           </li>
         ))}
